@@ -8,7 +8,7 @@ const SuccessfullLanding = ({handleLandSuccess}) => {
                 <h2 className="border-b-2  mb-4 p-1">Successful Landing</h2>
         <div className="grid grid-cols-2 gap-1">
             {
-                LandValues.map((launchSuccess,id) => <button key={id} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"  onClick={()=>handleLandSuccess(launchSuccess)}>{launchSuccess}</button>)
+                LandValues.map((launchSuccess,id) => <button key={id} className=" hover:bg-blue-700 text-black font-medium py-2 px-4 rounded"  style={{backgroundColor: "#C7F6B6"}} onClick={()=>handleLandSuccess(launchSuccess)}>{launchSuccess}</button>)
             }
  
         </div>
