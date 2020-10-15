@@ -25,4 +25,4 @@ Launches the test runner in the interactive watch mode.<br />
 ### npm install react-redux
 # SPACE_X_APP
 
-![Uploading Screenshot (14).png…]()
+![Screenshot (14)](https://user-images.githubusercontent.com/66550953/96095622-7b61a680-0eec-11eb-948b-2db949749a89.png)
