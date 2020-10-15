@@ -1,5 +1,6 @@
 import React from 'react'
-import Post from './Post'
+// import Post from './Post'
+const Post = React.lazy(() => import('./Post'));
 
 const RenderPosts = ({loading,hasErrors,posts}) => {
     if (loading) return <p>Loading posts...</p>

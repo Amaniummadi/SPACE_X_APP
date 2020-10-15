@@ -1,9 +1,12 @@
 import React,{useState} from 'react'
 import {useDispatch} from 'react-redux'
 import { fetchSelectedPosts} from '../redux/actions/postsAction'
-import SuccessfullLanding from './SuccessfullLanding'
-import LaunchYearComp from './LaunchYearComp'
-import SuccessfulLaunch from './SuccessfulLaunch'
+// import SuccessfullLanding from './SuccessfullLanding'
+// import LaunchYearComp from './LaunchYearComp'
+// import SuccessfulLaunch from './SuccessfulLaunch'
+const SuccessfullLanding = React.lazy(() => import('./SuccessfullLanding'));
+const LaunchYearComp = React.lazy(() => import('./LaunchYearComp'));
+const SuccessfulLaunch = React.lazy(() => import('./SuccessfulLaunch'));
 
 
 function Postfilter() {

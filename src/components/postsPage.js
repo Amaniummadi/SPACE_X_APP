@@ -4,16 +4,16 @@ import { connect } from 'react-redux'
 import { fetchPosts } from '../redux/actions/postsAction'
 
 
-import Postfilter from './PostFilter'
-import RenderPosts from './RenderPosts'
+// import Postfilter from './PostFilter'
+// import RenderPosts from './RenderPosts'
+const Postfilter = React.lazy(() => import('./PostFilter'));
+const RenderPosts = React.lazy(() => import('./RenderPosts'));
+
 
 const PostsPage = ({ dispatch, loading, posts, hasErrors }) => {
   useEffect(() => {
     dispatch(fetchPosts())
   }, [dispatch])
-
- 
-console.log("posts",posts)
 
   return (
     <div className="lg:container  lg:mx-auto  pb-10 pt-3 ">
@@ -31,6 +31,7 @@ console.log("posts",posts)
       </div>
 
       </div>   
+  <h3 className="text-black font-medium pt-5  text-2xl">Developed by :  Amani </h3>
     </div>
   )
 }

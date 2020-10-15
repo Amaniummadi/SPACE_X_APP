@@ -27,7 +27,7 @@ export function fetchPosts() {
 
 
 export function fetchSelectedPosts(succsess,landSuccess,yearSuccess) {
-console.log("in fetch slect posts",succsess, "landSuccess",landSuccess,"yearSuccess",yearSuccess);
+
   return async dispatch => {
     dispatch(getPosts())
 
